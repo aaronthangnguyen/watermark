@@ -63,29 +63,3 @@ for fileName in os.listdir(PATH_UNDONE):
     print('\r' + str(numberofDoneFiles) + '/' + str(numberOfFiles) + ' [' + str(numberofDoneFiles/numberOfFiles*100) + '%] - ' + fileName, end = '')
 # DONE
 print("\nDone!")
-
-# LOGO_FILENAME = './logo/logo.png'
-
-# logoIm = Image.open(LOGO_FILENAME)
-# logoWidth, logoHeight = logoIm.size
-
-# print((str(logoWidth) + "and" + str(logoHeight)))
-
-# # Loop
-
-# PATH_UNDONE = './undone/'
-# PATH_DONE = './done/'
-
-# for filename in os.listdir(PATH_UNDONE):
-#     im = Image.open(PATH_UNDONE + filename)
-
-#     imWidth, imHeight = im.size
-#     print((str(imWidth) + " and " + str(imHeight)))
-#     print('Adding logo to %s...' %(filename))
-
-#     # Paste
-#     im.paste(logoIm, (imWidth - logoWidth, imHeight - logoHeight), logoIm)
-
-#     # Save
-#     print('Saving to %s...' %(PATH_DONE))
-#     im.save(os.path.join(PATH_DONE, filename))
