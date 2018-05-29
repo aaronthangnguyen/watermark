@@ -51,7 +51,7 @@ numberOfFiles = len(os.listdir(PATH_UNDONE))
 numberofDoneFiles = 0
 
 # Status
-print("\n\n" + '=' * 40 + "\nPYTHON3-IMAGE PROTECTION by THANG NGUYEN\n" + '=' * 40)
+print('=' * 40 + "\nPYTHON3-IMAGE PROTECTION by THANG NGUYEN\n" + '=' * 40)
 
 # Iteration
 for fileName in os.listdir(PATH_UNDONE):
