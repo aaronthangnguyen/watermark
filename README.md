@@ -1,7 +1,13 @@
-# PYTHON3-IMAGE PROTECTION
-## Introduction
-PYTHON3-IMAGE PROTECTION is a simple text-based watermarking Python app, based on the implementation of the book'Automate the Boring Stuff with Python' by Al Sweigart and my personal needs.
+# PYTHON - IMAGE PROTECTION
+
+IMAGE PROTECTION is a simple CLI watermark
 
 ## Changelogs
-### 1.0 (25/05/2018)
+
+### 1.0 (05/25/2018)
+
 Hello world!
+
+### 1.1 (2018/05/29)
+
+Fix PATH error

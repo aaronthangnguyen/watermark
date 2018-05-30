@@ -16,7 +16,7 @@ PADDING = 150
 
 def isExisted(path, fileName):
     while os.path.isfile(os.path.join(path, fileName)) is False:
-        print(fileName, "not found!")
+        print("Cannot find", fileName + '!')
         input("Press Enter to continue...")
     '''
     Input: Path, Filename
@@ -51,7 +51,7 @@ numberOfFiles = len(os.listdir(PATH_UNDONE))
 numberofDoneFiles = 0
 
 # Status
-print('=' * 40 + "\nPYTHON3-IMAGE PROTECTION by THANG NGUYEN\n" + '=' * 40)
+print('=' * 40 + "\nIMAGE PROTECTION by THANG NGUYEN\n" + '=' * 40)
 
 # Iteration
 for fileName in os.listdir(PATH_UNDONE):
