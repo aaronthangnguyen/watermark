@@ -10,21 +10,24 @@ class Image(object):
         self.stat = dir_entry.stat()  # W.I.P
 
     def get_name(self):
-        '''Signature: None -> String
+        '''
+        Signature: None -> String
         Purpose: Return a string showing name of object
         Examples: self.get_name() -> "ABC.png"
         '''
         return self.name
 
     def get_path(self):
-        '''Signature: None -> String
+        '''
+        Signature: None -> String
         Purpose: Return a string showing path of object
-        Examples: self.get_path() -> "/tmp/ABC.png"
+        Examples: self.get_path() -> "./Pictures/ABC.png"
         '''
         return self.path
 
     def get_stat(self):
-        '''Signature: None -> Dictionary
+        '''
+        Signature: None -> Dictionary
         Purpose: Return a dictionary showing stat of object
         Examples: self.get_stat() -> {}
         '''
@@ -39,18 +42,28 @@ class Image(object):
             'accessed': self.stat.st_atime,
             'modified': self.stat.st_mtime
         }
-        # TODO: Convert timestamp using
+        # TODO: Convert timestamp using lambda function and
         # datetime.time.fromtimestamp(timestamp / 1e3)
         return stat
 
     def get_resolution(self):
-        '''Signature: None -> Tuple: (width, height)
+        '''
+        Signature: None -> Tuple: (width, height)
         Purpose: Return a tuple showing resolution of object
-        Examples: self.get_size() -> (3, 6)
+        Examples: self.get_resolution() -> (1920, 1080)
         '''
         path = self.get_path()
         with PilImage.open(path) as image:
             return image.size
+
+    def get_aspect_ratio(self):
+        '''
+        Signature: None -> Tuple (width, height)
+        Purpose: Return a tuple that shows aspect ratio of object
+        based on resolution provided by get_resolution()
+        Examples: self.get_aspect_ratio() -> (16, 9)
+        '''
+        # TODO: Continue
 
     def add_watermark(self, logo):
         pass
