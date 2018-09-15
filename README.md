@@ -1,1 +1,1 @@
-# Thang's Image-Watermark
+# WATERMARK
