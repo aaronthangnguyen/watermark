@@ -7,6 +7,8 @@ const PhotoPanel = () => {
         src="https://source.unsplash.com/random/1920x1080"
         rounded="base"
         shadow="lg"
+        pointerEvents="none"
+        userSelect="none"
       />
     </Box>
   );
