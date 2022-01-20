@@ -7,6 +7,8 @@ const Title = () => {
         size="2xl"
         mb="3rem"
         sx={{ fontFamily: 'Pacifico', letterSpacing: 1 }}
+        userSelect="none"
+        pointerEvents="none"
       >
         Watermark 🐁
       </Heading>
