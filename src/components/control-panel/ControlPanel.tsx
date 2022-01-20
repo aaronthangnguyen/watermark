@@ -1,7 +1,7 @@
 import { Box, Button, Flex } from '@chakra-ui/react';
-import PositionRadioInput from 'components/PositionRadioInput';
-import SizeNumberInput from 'components/SizeNumberInput';
-import TransparencyNumberInput from 'components/TransparencyNumberInput';
+import PositionRadioInput from 'components/control-panel/PositionRadioInput';
+import SizeNumberInput from 'components/control-panel/SizeNumberInput';
+import TransparencyNumberInput from 'components/control-panel/TransparencyNumberInput';
 
 const ControlPanel = () => {
   return (
